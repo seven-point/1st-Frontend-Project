@@ -1,0 +1,93 @@
+<html>
+<head><title>subsearch</title><style> 
+input {
+    height: 50;
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body bgcolor="blue">
+
+<h2><b><u>SUBJECTS</b></u></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for subjects.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="astrol.html">ASTROLOGY</a></li>
+  <li><a href="astron.html">ASTRONOMY</a></li>
+
+  <li><a href="bio.html">BIOLOGY</a></li>
+  <li><a href="chem.html">CHEMISTRY</a></li>
+
+  <li><a href="eng.htm">ENGLISH</a></li>
+  <li><a href="hin.html">HINDI</a></li>
+  <li><a href="ICT1.html">INFORMATION TECHNOLOGY</a></li>
+  <li><a href="maths.html">MATHEMATICS</a></li>
+  <li><a href="phy.html">PHYSICS</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+<audio controls autoplay hidden="false" loop="false">
+  
+  <source src="faded.mp3" type="audio/mpeg"  >
+<form>
+  <div class="container"HEIGHT="100"><label><b>COMMENT</b></label>
+    <input type="text" placeholder="Write a comment . ." name="comment"  ><br><br>
+<input type="submit" value="SUBMIT"></div></form>
+hello
+
+</body>
+</html>

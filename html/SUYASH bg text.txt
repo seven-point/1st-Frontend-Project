@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>INFOBUZZ.COM</title><style> 
+input {
+    height: 29;
+}
+</style></head>
+<body background="p1.jpg" text="white"><center>
+<font color="yellow" size="20">
+<marquee scrollamount=10><b><i><u>WELCOME TO INFOBUZZ</b></i></u></marquee>
+</font><FONT SIZE="17">
+THE SITE PROVIDES YOU WITH THE INFORMATION ABOUT ANY SUBJECT YOU LIKE<BR>
+IN ORDER TO PROCEED YOU NEED TO REGISTER YOURSELF WITH US.</FONT>
+<font color="red" size="15">
+<form action="my2.html" target="_parent" method="get">
+  <div class="container"HEIGHT="100">
+    <label><b>NAME</b></label>
+    <input type="text" placeholder="Enter NAME" name="NAME"  ><br><br>
+
+    <label><b>DATE OF BIRTH</b></label>
+    <input type="date" placeholder="Enter date of birth" name="DOB"   ><br><br>
+<label for="country"><b>COUNTRY</b></label>
+    <select id="country" name="country">
+      <option value="russia">RUSSIA</option>
+      <option value="uk">UK</option>
+      <option value="usa">USA</option>
+<option value="india">INDIA</option>
+    </select><br><br>
+
+<a href="my2.html"><input type="submit" value="ENTER">
+</a>
+    </div>
+  </div>
+</form>
+</font>
+</center>
+<audio controls autoplay hidden="false" loop="false">
+  
+  <source src="area.mp3" type="audio/mpeg"  >
+
+</audio> 
+
+</body>
+</html>
